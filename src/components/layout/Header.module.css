@@ -1,0 +1,70 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding-top: env(safe-area-inset-top, 0px);
+  background: rgb(12 11 10 / 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 40px;
+  height: auto;
+}
+
+.brand span {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Sur téléphone, la navigation passe dans la barre d'onglets du bas. */
+.nav {
+  display: none;
+  gap: 4px;
+}
+
+.link {
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  color: var(--color-muted);
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-chalk);
+}
+
+.link[aria-current='page'] {
+  color: var(--color-chalk);
+  background: var(--color-panel-raised);
+}
+
+@media (min-width: 860px) {
+  .nav {
+    display: flex;
+  }
+}

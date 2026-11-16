@@ -1,0 +1,35 @@
+.footer {
+  margin-top: 32px;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-muted);
+  font-size: 0.8125rem;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding-block: 16px;
+}
+
+/* Accès admin volontairement discret. */
+.admin {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding-inline: 6px;
+  color: var(--color-subtle);
+  text-decoration: none;
+}
+
+.admin:hover {
+  color: var(--color-muted);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}

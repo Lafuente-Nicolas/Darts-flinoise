@@ -1,0 +1,30 @@
+/* Identité Darts Flinoise : noir de bar, craie, laiton du fût, rouge et vert de la cible. */
+:root {
+  --color-ink: #0c0b0a;
+  --color-panel: #161412;
+  --color-panel-raised: #1d1a17;
+  --color-line: #2c2824;
+  --color-line-strong: #4a453f;
+  --color-chalk: #f2ece0;
+  --color-muted: #b8b0a3;
+  --color-subtle: #8f877b;
+  --color-brass: #c9a46a;
+  --color-red: #c8121a;
+  --color-red-hover: #e3262d;
+  --color-danger-text: #ff9a9e;
+  --color-silver: #cfd3d8;
+  --color-bronze: #b9784a;
+
+  --font-display: 'Anton', Impact, 'Arial Narrow', sans-serif;
+  --font-body: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+
+  --radius-sm: 4px;
+  --radius: 8px;
+  --container: 1160px;
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-right: max(16px, env(safe-area-inset-right, 0px));
+  --tabbar-height: 64px;
+
+  color-scheme: dark;
+}

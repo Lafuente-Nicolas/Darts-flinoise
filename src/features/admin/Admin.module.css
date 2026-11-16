@@ -1,0 +1,154 @@
+.narrow {
+  max-width: 520px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-block: 24px;
+  color: var(--color-muted);
+}
+
+.lockBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-panel-raised);
+  color: var(--color-brass);
+}
+
+.lockBadge svg {
+  width: 22px;
+  height: 22px;
+}
+
+.session {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--color-muted);
+  overflow-wrap: anywhere;
+}
+
+.session strong {
+  color: var(--color-chalk);
+}
+
+/* ---------- Onglets ---------- */
+.tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.tab {
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  background: var(--color-panel);
+  color: var(--color-muted);
+  font-weight: 700;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.tab[aria-selected='true'] {
+  border-color: var(--color-brass);
+  color: var(--color-chalk);
+}
+
+.panel {
+  padding-top: 4px;
+}
+
+/* ---------- Formulaire d'actu ---------- */
+.form {
+  max-width: 720px;
+}
+
+.counter {
+  align-self: flex-end;
+  color: var(--color-subtle);
+  font: 500 0.75rem/1 var(--font-mono);
+}
+
+/* ---------- Import Excel ---------- */
+.columns {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+}
+
+.columns code {
+  color: var(--color-chalk);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 22px 16px;
+  text-align: center;
+  background: #12100e;
+  border: 1.5px dashed #6b6358;
+  border-radius: var(--radius);
+}
+
+.dropzoneActive {
+  border-color: var(--color-brass);
+  background: #1a1712;
+}
+
+/* Le label sert de bouton : on lui reporte le focus du champ fichier masqué. */
+.dropzone:focus-within label {
+  outline: 2px solid var(--color-brass);
+  outline-offset: 3px;
+}
+
+.dropIcon {
+  width: 28px;
+  height: 28px;
+  color: var(--color-brass);
+}
+
+.dropHint {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+.template {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--color-brass);
+  font-weight: 700;
+}
+
+.previewTitle {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.warnings {
+  margin: 0;
+  padding: 12px 12px 12px 30px;
+  border: 1px solid #5b4a2c;
+  border-radius: var(--radius);
+  background: #1f1a12;
+  color: var(--color-brass);
+  font-size: 0.875rem;
+}
